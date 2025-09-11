@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> The Royal Spoon – Your Gourmet Concierge 👑🍽️</title>
+    <meta name="description" content="Project by Muzammil Baloch" />
+    <meta name="author" content="Muzammil Baloch" />
+
+    <meta property="og:title" content="royal-spoon-ai-build" />
+    <meta property="og:description" content="Project by Muzammil Baloch" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+
+    <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+    <!-- <meta name="twitter:site" content="@lovable_dev" /> -->
+    <!-- <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+
+   
+    <style>
+      df-messenger {
+        /* Bot messages - Cream */
+        --df-messenger-bot-message: #dfd9d4;
+        
+        /* Title bar - GOLD + BLACK gradient */
+        --df-messenger-button-titlebar-color: #d4af37;
+        
+        /* Chat background - Soft warm beige */
+        --df-messenger-chat-background-color: #f7f6f3;
+        
+        /* Font color */
+        --df-messenger-font-color: #2c2c2c;
+        
+        /* Send icon - Gold */
+        --df-messenger-send-icon: #d4af37;
+        
+        /* User messages - Deep royal green (contrast with gold title) */
+        --df-messenger-user-message: #f0d352;
+        --df-messenger-user-message-font-color: #ffffff;
+        
+        /* Input field */
+        --df-messenger-input-box-color: #f8f5f2;
+        --df-messenger-input-font-color: #2c2c2c;
+        
+        /* Chat title text white */
+        --df-messenger-chat-title-color: #fff;
+        
+        /* Border radius & shadow */
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      }
+    
+      /* Premium styling */
+      df-messenger::part(chat-wrapper) {
+        border-radius: 15px;
+        background: #fefcf4;
+      }
+    
+      df-messenger::part(titlebar) {
+        background: linear-gradient(135deg, #d4af37 0%, #b8941f 60%, #2c2c2c 100%) !important;
+        border-radius: 15px 15px 0 0;
+        border-bottom: 2px solid #2c2c2c;
+      }
+
+ /* Chat window ki height aur width control karna */
+ df-messenger {
+    --df-messenger-chat-window-height: 300px;  /* default ~ calc(100% - 100px) hota hai */
+    --df-messenger-chat-window-width: 350px;   /* default ~ 360px hota hai */
+  }
+
+    </style>
+    
+
+
+  </head>
+
+
+  <body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    chat-icon="src/assets/royalii.png"
+      intent="WELCOME"
+      chat-title="The Royal Concierge"
+      agent-id="5c9b6074-bee2-4365-a76d-5027d66fad74"
+      language-code="en"
+    ></df-messenger>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
