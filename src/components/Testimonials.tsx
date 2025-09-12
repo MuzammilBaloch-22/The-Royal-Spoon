@@ -31,7 +31,7 @@ const Testimonials = () => {
       rating: 5,
       review:
         'We celebrated our anniversary here and it exceeded all expectations. The attention to detail, from the perfectly spiced biryani to the elegant table settings, made our evening truly memorable.',
-      avatar: 'https://randomuser.me/api/portraits/men/65.jpg',
+      avatar: 'https://anavara.com/wp-content/uploads/2020/06/Dr.-Ahmed-Hassan-e1597958545756.png',
     },
     {
       name: 'Fatima Al-Rashid',
